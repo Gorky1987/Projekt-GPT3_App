@@ -107,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				0B37D43A29A28E7F00D23AD8 /* Api-keys.plist */,
+				0B37D40A29A28E3B00D23AD8 /* Data */,
 				0B37D42F29A28E5D00D23AD8 /* ViewModel */,
 				0B37D42429A28E5400D23AD8 /* View */,
 				0B37D41F29A28E4E00D23AD8 /* Networking */,
@@ -137,7 +138,6 @@
 				0B37D40729A28E3B00D23AD8 /* MessageRow.swift */,
 				0B37D40829A28E3B00D23AD8 /* CompletionResponse.swift */,
 				0B37D40929A28E3B00D23AD8 /* LanguageType.swift */,
-				0B37D40A29A28E3B00D23AD8 /* Data */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,9 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				0B37D3F429A28DD200D23AD8 /* ContentView.swift */,
+				0B37D42729A28E5400D23AD8 /* ChatView.swift */,
 				0B37D42529A28E5400D23AD8 /* ImageAIView.swift */,
 				0B37D42629A28E5400D23AD8 /* TapBar.swift */,
-				0B37D42729A28E5400D23AD8 /* ChatView.swift */,
 				0B37D42929A28E5400D23AD8 /* PhotoAlbumView.swift */,
 			);
 			path = View;

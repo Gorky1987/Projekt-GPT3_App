@@ -8,9 +8,9 @@
 import Foundation
 import CoreData
 
-//Multiple NSEntityDescriptions claim the NSManagedObject subclass 'Message' so +entity is unable to disambiguate
+
 class DataController : ObservableObject {
-    let container = NSPersistentContainer(name: "MessageModel")
+ /*   let container = NSPersistentContainer(name: "MessageModel")
     
     static let shared = DataController()
     
@@ -61,7 +61,7 @@ class DataController : ObservableObject {
     
     func deleteAllData (context : NSManagedObjectContext) {
         let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Message")
-        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+   //     let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
         
         do {
             //         try context.executeAndMergeChanges(using: deleteRequest)
@@ -75,7 +75,7 @@ class DataController : ObservableObject {
                 let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Message")
                 fetchRequest.predicate = NSPredicate(format: "saved == %@", "\(false)")
                 
-                let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+            //    let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
                 
                 do {
                     //         try context.executeAndMergeChanges(using: deleteRequest)
@@ -88,6 +88,6 @@ class DataController : ObservableObject {
                 
                 
             }
-        }
-    }
+   }       
+  */
 }

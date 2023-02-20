@@ -18,7 +18,7 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fill)
                     .edgesIgnoringSafeArea(.all)
                 
-                VStack(spacing: 20) {
+                VStack(spacing: 0) {
                     NavigationView {
                         VStack(spacing: 20) {
                             VStack {
@@ -50,13 +50,13 @@ struct ContentView: View {
                                         Image(systemName: "bubble.right.fill")
                                             .foregroundColor(.green)
                                             .font(.system(size: 25))
-                                    }.frame()
+                                    }
                                         .background(Color.gray.opacity(0.7))
                                         .cornerRadius(10)
                                 }
                                 .padding
                                 Divider()
-                                
+                          
                                 NavigationLink(destination: ImageAIView()) {
                                     HStack {
                                         Text("DrawAI")
@@ -73,8 +73,8 @@ struct ContentView: View {
                                 }
                                 .padding(.top, 10)
                                 Divider()
-                                
-                                ScrollView(.horizontal) {
+                      
+                             ScrollView(.horizontal) {
                                     LazyHStack(spacing: 10) {
                                         ForEach(savedImages, id: \.self) { imageName in
                                             Image(imageName)
@@ -85,12 +85,12 @@ struct ContentView: View {
                                                 .cornerRadius(10)
                                         }
                                     }
-                                }.frame(height: 75)
-                                    .padding()
-                                
-                            }.navigationBarHidden(true)
+                                }
+                                  .padding()
+                        
+                            }
                         }
-                    }
+                    }.navigationBarHidden(true)
                 }
             }
         }
